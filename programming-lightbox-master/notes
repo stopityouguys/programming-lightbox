@@ -1,0 +1,9 @@
+click event happens to thumbnail 
+[query selector and add event listener]
+create new div to contain other modal elements called modal-container 
+[document.createElement element.appendChild element.style.prop element.classList.add]
+    create new enlarged image with styling
+    create new X button with styling
+    create new caption with styling
+create darkened background (a giant div with 50% opacity)
+round 2: how to close the lightbox again

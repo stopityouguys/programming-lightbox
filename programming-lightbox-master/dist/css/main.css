@@ -1,0 +1,222 @@
+/* 
+==============================================
+CONTENT:	Project Name Here
+AUTHOR:		Your Name Here
+==============================================
+
+TABLE OF CONTENTS:
+
+0. Reset
+1. Main Layout
+2. Content
+
+==============================================
+*/
+/* 0. Reset ================================= */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* 1. Main Layout ================================= */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: white;
+}
+
+/* 2. Content ================================= */
+.content .thumbnail {
+  max-width: 300px;
+  max-height: 300px;
+  transition: transform 0.4s, box-shadow 0.4s;
+}
+
+.content .thumbnail:hover {
+  -ms-transform: scale(1.1) translateY(-10px);
+  transform: scale(1.1) translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.lightbox-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  width: 100vw;
+  height: 100vh;
+  transition: opacity 1s;
+  opacity: 1;
+}
+.lightbox-overlay.hidden {
+  opacity: 0;
+}
+
+.lightbox {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  background-color: white;
+  padding: 30px;
+  border-radius: 5px;
+  opacity: 0;
+  -ms-transform: translate(-50%, -30%);
+  transform-origin: center center;
+  transform: translate(-50%, -30%);
+  transition: opacity 2s, transform 0.2s;
+}
+
+.lightbox img {
+  display: block;
+  max-width: 90vw;
+  max-height: 80vh;
+}
+
+.lightbox .lightbox-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 48px;
+  height: 48px;
+  -ms-transform: translate(50%, -50%);
+  transform: translate(50%, -50%);
+  border: 0;
+  outline: none;
+  background: none;
+  background-size: contain;
+  background-image: url(../img/close-button.png);
+}
+
+/*# sourceMappingURL=main.css.map */
